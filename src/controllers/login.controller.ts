@@ -12,7 +12,7 @@ export const handleLogin = (
   try {
     const user = req.user as UserDocument
     const token = jwt.sign({ user }, process.env.JWT_SECRET as string, {
-      expiresIn: '1h',
+      expiresIn: '2h',
     })
     res.json({ token })
     return
