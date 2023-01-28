@@ -18,9 +18,9 @@ const router = express.Router()
 
 router.param('userId', idValidator)
 
-router.post('/', validate(userSchema), createUser)
-router.get('/', findAllUsers)
-router.get('/:userId', findUserById)
+router.post('/', authCheck(['ADMIN']), validate(userSchema), createUser)
+router.get('/', authCheck(['ADMIN']), findAllUsers)
+router.get('/:userId', authCheck(['ADMIN', 'USER']), findUserById)
 router.delete('/:userId', authCheck(['ADMIN']), deleteUser)
 router.put(
   '/:userId',
