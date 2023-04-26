@@ -14,10 +14,12 @@ This project is built with Express framework, to install and run this project lo
   npm install
 
 3. create a .env file with following values and add your root directory
-  ``` MONGODB_URI=YOUR OWN MONGO DATABASE URL
+  ``` 
+  MONGODB_URI=YOUR OWN MONGO DATABASE URL
   PORT=4000
   GOOGLE_CLIENT_ID=YOUR OWN GOODLE CLIENT ID
-  JWT_SECRET=YOUR OWN JWT SECRET VALUE ```
+  JWT_SECRET=YOUR OWN JWT SECRET VALUE 
+  ```
   
 4. run with command
   npm run start
