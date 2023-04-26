@@ -13,7 +13,7 @@ This project is built with Express framework, to install and run this project lo
 2. Install NPM packages
   npm install
 
-3. create a .env file with following values and add your root directory
+3. create a .env file with following values and add it to your root directory
   ``` 
   MONGODB_URI=YOUR OWN MONGO DATABASE URL
   PORT=4000
